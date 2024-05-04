@@ -62,13 +62,10 @@
         }
 
         .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            max-width: 1200px; /* Set maximum width */
+            margin: 0 auto; /* Center the container */
             padding: 20px;
             text-align: center;
-            min-height: 100vh;
         }
 
         .sidebar {
@@ -92,7 +89,6 @@
             color: white;
             text-align: center;
             padding: 10px;
-            width: 100%;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
         }
@@ -171,7 +167,7 @@
 <div class="container" id="about">
     <div class="sidebar">
         <h3>About Us</h3>
-        <p>We are the team chasing Eterniy.</p>
+        <p>We are the team chasing Eternity.</p>
         <div class="video-container">
             <iframe width="560" height="315" src="vid.mp4" frameborder="0" allowfullscreen></iframe>
         </div>
