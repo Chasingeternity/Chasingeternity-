@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Platforms</title>
+    <meta name="description" content="Connect with us on various platforms. Find out more about our company and services.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: #acf2eb; /* Light gray background */
+            color: #333; /* Dark gray text color */
+        }
+
+        .header {
+            background-color: #009172;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .header .logo {
+            font-size: 26px;
+            font-weight: bold;
+            display: flex; /* Make the logo and text align in a row */
+            align-items: center; /* Align vertically */
+        }
+
+        .header .logo img {
+            max-height: 50px; /* Adjust the max height as needed */
+            margin-right: 10px; /* Add some margin to separate it from the text */
+        }
+
+        .nav {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav li {
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            text-align: center;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .content {
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            background-color: #009172;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .platform-links {
+            margin-top: 20px;
+        }
+
+        .platform-links a {
+            display: inline-block;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: 2px solid #333;
+            border-radius: 20px;
+            margin-right: 10px;
+            background-color: #fff;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .platform-links a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .video-container {
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%; /* 16:9 aspect ratio (iframe video) */
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .nav li {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            .platform-links a {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="logo"> 
+        <img src="chasing.jpg" alt="" style="max-height: 50px;"> <!-- Adjust the max height as needed -->
+        <span style="vertical-align: middle;">Chasing Eternity</span> <!-- Align vertically -->
+    </div>
+    <ul class="nav">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#platforms">Platforms</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</div>
+
+<div class="container" id="about">
+    <div class="sidebar">
+        <h3>About Us</h3>
+        <p>We are the team chasing Eterniy.</p>
+        <div class="video-container">
+            <iframe width="560" height="315" src="vid.mp4" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    
+    <div class="content" id="platforms">
+        <h3>We are available on:</h3>
+        <div class="platform-links">
+            <a href="https://www.instagram.com/chasingeternity1?igsh=MWY4cnZ5b28zcTJuMg%3D%3D" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://discord.com/invite/vUZHA8NF" target="_blank" aria-label="Discord"><i class="fab fa-discord"></i></a>
+            <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+</div>
+<div class="footer" id="contact">
+    <div>© 2024 chasing Eternity. All rights reserved.</div>
+    <div class="email">Contact us: chasing2eternity@gmail.com</div>
+</div>
+
+<!-- Analytics and tracking scripts would go here -->
+
+</body>
+</html>
