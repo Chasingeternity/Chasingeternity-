@@ -7,98 +7,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
-            background-color: #acf2eb; /* Light gray background */
-            color: #333; /* Dark gray text color */
-        }
+    
+           
+         @media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
 
-        .header {
-            background-color: #009172;
-            color: white;
-            padding: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
-            z-index: 10; /* Ensure the header stays above other elements */
-        }
+    .sidebar, .content {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px; /* Add space between sidebar and content */
+    }
 
-        .header .logo {
-            font-size: 26px;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-        }
+    .sidebar {
+        padding: 20px;
+    }
 
-        .header .logo img {
-            max-height: 50px;
-            margin-left: 10px; /* Adjusted to left margin */
-        }
+    .content {
+        padding: 20px;
+    }
 
-        .container {
-            display: flex;
-            justify-content: space-between;
-            padding: 40px 20px;
-            min-height: calc(100vh - 100px); /* Adjust for footer height */
-        }
+    .header .logo img {
+        max-height: 40px;
+    }
 
-        .sidebar, .content {
-            padding: 30px;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            transition: filter 0.3s; /* Smooth transition for blur effect */
-        }
+    .platform-links a {
+        padding: 10px 15px;
+    }
 
-        .sidebar {
-            width: 45%;
-            margin-right: 10px;
-        }
+    .footer {
+        padding: 15px;
+    }
+}
 
-        .content {
-            width: 45%;
-        }
-
-        .footer {
-            background-color: #009172;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            width: 100%;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-        }
-
-        .platform-links {
-            margin-top: 20px;
-        }
-
-        .platform-links a {
-            display: block;
-            text-decoration: none;
-            color: #009172;
-            font-weight: bold;
-            padding: 10px 20px;
-            border: 2px solid #009172;
-            border-radius: 20px;
-            margin-bottom: 10px; /* Margin between links */
-            background-color: #fff;
-            transition: background-color 0.3s, color 0.3s, border 0.3s; /* Smooth transition for all effects */
-            text-align: center; /* Center align the text */
-        }
-
-        .platform-links a:hover {
-            background-color: #009172;
-            color: #fff;
-            border-color: #009172;
-        }
-    </style>
 </head>
 <body>
 
